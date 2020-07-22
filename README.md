@@ -4,7 +4,7 @@ Le portail de police est un projet de développement inspiré d'un projet exista
 Lien du propriétaire de base : [Owner](https://forum.fivem.net/u/davendrix)
 
 Installation : 
-
+```
 $username = "police-portal"; // username
 $password = "your password"; // password of the database
 $hostname = "localhost"; // host of the database
