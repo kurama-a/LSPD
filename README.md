@@ -1,33 +1,17 @@
 # Police
-Portal for logging crimes for your FiveM RP server.
+Le portail de police est un projet de développement inspiré d'un projet existant
 
-At the time of doing this, there is no repo for this project by the owner. I do not own this software, it is a "fork" from [here](https://forum.fivem.net/t/release-lspd-web-panel-v-0-0-1/23428) Make sure to check out the [Owner](https://forum.fivem.net/u/davendrix)
+Lien du propriétaire de base : [Owner](https://forum.fivem.net/u/davendrix)
 
-## Installation Guide
-- Download the ZIP folder
-- Open the `config.php` file and change the following to connect to your database:
-```
+Installation : 
+
 $username = "police-portal"; // username
 $password = "your password"; // password of the database
 $hostname = "localhost"; // host of the database
 $namebase = "police"; // name of the database
 ```
-- Import the `databse.sql` file into your MySQL database
-- Upload all the files to your webserver and then visit `http://yoursite.com/signup.php`to create an account
-- Once you have created an account, delete the `signup.php` file
-- You're done!
-
-## Demo
-A demo of this can be found [here](http://gtavrptest.16mb.com/login.php)
-
-Username: `test@test.com`
-
-Password: `test`
+- Importer le `databse.sql` dans votre base de donnée
+- Importer les fichiers dans le FTP de votre site
+- Après avoir créer votre compte supprimez le fichier signup.php pour éviter que d'autres personnes s'identifient
 
 
-## Features
-- Add and Delete players from a criminal list
-- Search by each heading
-
-## Feedback
-Feedback is great! If you have a suggestion or request, create an issue! Smilarly, if you have any issues, use the issue tab to let us know.
