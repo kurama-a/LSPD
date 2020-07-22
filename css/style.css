@@ -97,7 +97,7 @@ input[type='submit'] {
   cursor: pointer;
 }
 
-.form input[type='email'],
+.form input[type='pseudo'],
 .form input[type='password'] {
   width: 100%;
 }
@@ -140,13 +140,13 @@ input[type='submit'] {
   width: 0.5em;
 }
 
-.login input[type='email'],
+.login input[type='pseudo'],
 .login input[type='password'] {
   border: 0.0625em solid #e5e5e5;
   padding: 1em 1.25em;
 }
 
-.login input[type='email'] {
+.login input[type='pseudo'] {
   border-top-left-radius: 0.25em;
   border-top-right-radius: 0.25em;
 }

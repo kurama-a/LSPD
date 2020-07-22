@@ -4,11 +4,11 @@ session_start();
 include( "config.php" );
 
 if(isset($_POST['formconnexion'])) {
-   $mailconnect = htmlspecialchars($_POST['mailconnect']);
+   $pseudoconnect = htmlspecialchars($_POST['pseudoconnect']);
    $mdpconnect = sha1($_POST['mdpconnect']);
-   if(!empty($mailconnect) AND !empty($mdpconnect)) {
-      $requser = $bdd->prepare("SELECT * FROM membres WHERE mail = ? AND motdepasse = ?");
-      $requser->execute(array($mailconnect, $mdpconnect));
+   if(!empty($pseudoconnect) AND !empty($mdpconnect)) {
+      $requser = $bdd->prepare("SELECT * FROM membres WHERE pseudo = ? AND motdepasse = ?");
+      $requser->execute(array($pseudoconnect, $mdpconnect));
       $userexist = $requser->rowCount();
       if($userexist == 1) {
          $userinfo = $requser->fetch();
@@ -17,10 +17,10 @@ if(isset($_POST['formconnexion'])) {
          $_SESSION['mail'] = $userinfo['mail'];
          header("Location: index.php?id=".$_SESSION['id']);
       } else {
-         $erreur = "Email address or password is invalid !";
+         $erreur = "Le pseudo ou le mot de passe est invalide !";
       }
    } else {
-      $erreur = "All fields should be completed !";
+      $erreur = "Tous les champs ne sont pas complétés";
    }
 }
 ?>
@@ -45,25 +45,24 @@ if(isset($_POST['formconnexion'])) {
 
       <header class="login__header">
 	    <img src="https://lossantospolicedepartmentlspd.weebly.com/uploads/2/5/6/4/25644844/6606452.png">
-        <h3 class="login__title">LSPD Login</h3>
+        <h3 class="login__title">LSPD ACCES</h3>
       </header>
 
       <div class="login__body">
 
         <div class="form__field">
-          <input type="email" name ="mailconnect" placeholder="eMail">
+          <input type="pseudo" name ="pseudoconnect" placeholder="Pseudo">
         </div>
 
         <div class="form__field">
-          <input type="password" name="mdpconnect" placeholder="password">
+          <input type="password" name="mdpconnect" placeholder="Mot de passe">
         </div>
 
       </div>
 
       <footer class="login__footer">
-        <input type="submit" value="Login" name="formconnexion">
+        <input type="submit" value="Connexion" name="formconnexion">
 
-        <p><span class="icon icon--info">?</span><a href="#">Forgot your password</a></p>
       </footer>
 
     </form>

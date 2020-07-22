@@ -37,7 +37,7 @@ if (isset($_SESSION['id'])) {
                         </a>
                     </div>
                     <div class="right-div">
-                        <a href="logout.php" class="btn btn-danger pull-right">LOG ME OUT</a>
+                        <a href="logout.php" class="btn btn-danger pull-right">Deconnectez moi</a>
                     </div>
                 </div>
             </div>
@@ -49,10 +49,10 @@ if (isset($_SESSION['id'])) {
                             <div class="navbar-collapse collapse ">
                                 <ul id="menu-top" class="nav navbar-nav navbar-right">
                                     <li>
-                                        <a href="index.php" class="menu-top-active"> Home</a>
+                                        <a href="index.php" class="menu-top-active"> Menu</a>
                                     </li>
                                     <li>
-                                        <a href="add_criminal.php">Add a criminal</a>
+                                        <a href="add_criminal.php">Ajouter un criminel</a>
                                     </li>
                                 </ul>
                             </div>
@@ -78,13 +78,13 @@ if (isset($_SESSION['id'])) {
                                             <thead>
                                                 <tr>
                                                     <th>Id</th>
-                                                    <th>Name</th>
-                                                    <th>User ID</th>
-                                                    <th>Steam ID</th>
+                                                    <th>Nom</th>
+                                                    <th>Matricule de l\'agent</th>
+                                                    <th>Temps de prison</th>
                                                     <th>Crime</th>
-                                                    <th>Sanction, fine, ..</th>
+                                                    <th>Total amendes</th>
                                                     <th>
-                                                    Delete
+                                                    Supprimer
                                                     </th>
                                                 </tr>
                                             </thead>

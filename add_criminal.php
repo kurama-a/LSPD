@@ -33,7 +33,7 @@
 						</a>
 					</div>
 					<div class="right-div">
-						<a href="logout.php" class="btn btn-danger pull-right">LOG ME OUT</a>
+						<a href="logout.php" class="btn btn-danger pull-right">Deconnectez moi</a>
 					</div>
 				</div>
 			</div>
@@ -45,10 +45,10 @@
 							<div class="navbar-collapse collapse ">
 								<ul id="menu-top" class="nav navbar-nav navbar-right">
 									<li>
-										<a href="index.php"> Home</a>
+										<a href="index.php"> Menu</a>
 									</li>
 									<li>
-										<a href="add_criminal.php" class="menu-top-active">Add a criminal</a>
+										<a href="add_criminal.php" class="menu-top-active">Ajouter un criminel</a>
 									</li>
 								</ul>
 							</div>
@@ -60,7 +60,7 @@
 			<div class="panel panel-info">
 				<div class="panel-heading">
 					<p></p>
-					<p></p>Add a Criminal
+					<p></p>Ajouter un criminel
 					<p></p>
 					<p></p>
 				</div>
@@ -68,36 +68,36 @@
 					<form action="add_criminal_post.php" method="post">
 						<p>
 							<div class="form-group">
-								<label for="nom">First and Surname</label> :
-								<p class="help-block">ex: John Cena</p>
+								<label for="nom">Nom et Prénom</label> :
+								<p class="help-block">ex : John Cena</p>
 								<input type="text" name="nom" id="nom" class="form-control" required />
 								<br />
 							</div>
 							<div class="form-group">
-								<label for="message">User ID</label> :
-								<p class="help-block">ex 123</p>
+								<label for="message">Matricules Agents</label> :
+								<p class="help-block">ex : CDT-13</p>
 								<input type="text" name="telephone" id="telephone" class="form-control" required />
 								<br />
 							</div>
 							<div class="form-group">
-								<label for="message">Steam ID</label> :
-								<p class="help-block">STEAM_0:0:61796428 or 76561198083858584</p>
+								<label for="message">Temps de Prison</label> :
+								<p class="help-block">Temps en minutes</p>
 								<input type="text" name="steam" id="steam" class="form-control"/>
 								<br />
 							</div>
 							<div class="form-group">
 								<label for="message">Crime</label> :
-								<p class="help-block">Robber/ Car jacking / ...</p>
+								<p class="help-block">ex : Vol de véhicule</p>
 								<input type="text" name="crime" id="crime" class="form-control" required />
 								<br />
 							</div>
 							<div class="form-group">
-								<label for="message">Sanction</label> :
-								<p class="help-block">ex $100 Fine, 1 Year in jail</p>
+								<label for="message">Total amendes</label> :
+								<p class="help-block">ex : $10000</p>
 								<input type="text" name="sanction" id="sanction" class="form-control" required />
 								<br />
 							</div>
-							<input type="submit" value="Send" class="btn btn-info />
+							<input type="submit" value="Envoyer" class="btn btn-info />
 						</p>
 					</form>
 					<p></p>
