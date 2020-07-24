@@ -45,11 +45,38 @@
 							<div class="navbar-collapse collapse ">
 								<ul id="menu-top" class="nav navbar-nav navbar-right">
 									<li>
-										<a href="index.php"> Menu</a>
-									</li>
-									<li>
-										<a href="add_criminal.php" class="menu-top-active">Ajouter un criminel</a>
-									</li>
+                                        <a href="index.php" class="menu-top-active"> Menu</a>
+                                    </li>
+                                    <li>
+                                        <a href="add_criminal.php">Ajouter un criminel</a>
+                                    </li>
+                                    <li>
+                                        <a href="rapports.php">Rapports</a>
+                                    </li>
+                                    <li>
+                                        <a href="plaintes.php">Plaintes</a>
+                                    </li>
+                                    <li>
+                                        <a href="amendes.php">Amendes</a>
+                                    </li>
+                                    <li>
+                                        <a href="véhicules.php">Véhicules saisies</a>
+                                    </li>
+                                    <li>
+                                        <a href="ppa.php">PPA</a>
+                                    </li>
+                                    <li>
+                                        <a href="enquete.php">Enquête</a>
+                                    </li>
+                                    <li>
+                                        <a href="licence.php">Retrait de licence</a>
+                                    </li>
+                                    <li>
+                                        <a href="pied.php">Mise à pied</a>
+                                    </li>
+                                    <li>
+                                        <a href="saisie.php">Saisie de biens</a>
+                                    </li>
 								</ul>
 							</div>
 						</div>
@@ -108,10 +135,10 @@
 				<section class="footer-section">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-12">
-                   &copy; 2017 LSPD |
-								<a href="https://www.youtube.com/user/davendrix" target="_blank"  > Coded by : Davendrix</a>
-							</div>
+						<div class="col-md-12">
+							   &copy; 2020 LSPD 
+						<a target="_blank"  > </a>
+						</div>
 						</div>
 					</div>
 				</section>

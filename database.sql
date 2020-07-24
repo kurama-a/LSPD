@@ -35,6 +35,17 @@ CREATE TABLE IF NOT EXISTS `lspd` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=14 ;
 
 
+ALTER TABLE `lspd`
+	ADD COLUMN `prison` VARCHAR(50) NULL DEFAULT '' AFTER `money`,
+	ADD COLUMN `skin` LONGTEXT NULL AFTER `name`,
+	ADD COLUMN `job` varchar(50) NULL DEFAULT 'unemployed' AFTER `skin`,
+	ADD COLUMN `job_grade` INT NULL DEFAULT 0 AFTER `job`,
+	ADD COLUMN `loadout` LONGTEXT NULL AFTER `job_grade`,
+	ADD COLUMN `position` VARCHAR(36) NULL AFTER `loadout`
+;
+
+
+
 
 -- --------------------------------------------------------
 
