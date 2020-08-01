@@ -48,7 +48,7 @@ body {
 
 .right-div {
     float: right; 
-    padding: 20px;
+    padding: 35px;
 }
 #menu-top a {
     color:#000;
@@ -60,7 +60,7 @@ body {
 }
 .menu-section {
     background-color: #f7f7f7;
-    border-bottom:5px solid #9170E4;
+    border-bottom:5px solid #0C5CD8;
     width:100%
 }
 .menu-top-active {
@@ -84,6 +84,8 @@ border-color: rgba(155, 153, 153, 0.23);
 background-color: black;
 border: 1px solid black;
 }
+
+
 
     /* =============================================================
    DASHBOARD STYLES
@@ -211,7 +213,7 @@ height: 60px;
     font-size:13px;
       background-color: #f7f7f7;
       text-align:right;
-       border-top:5px solid #9170E4;
+       border-top:5px solid blue;
 
 }
 
@@ -219,3 +221,7 @@ height: 60px;
         color:#000;
     }
 
+    .username {
+        color:blue;
+        padding: 10px;
+    }

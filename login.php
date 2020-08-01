@@ -15,7 +15,7 @@ if(isset($_POST['formconnexion'])) {
          $_SESSION['id'] = $userinfo['id'];
          $_SESSION['pseudo'] = $userinfo['pseudo'];
          $_SESSION['mail'] = $userinfo['mail'];
-         header("Location: index.php?id=".$_SESSION['id']);
+         header("Location: add.php?id=".$_SESSION['id']);
       } else {
          $erreur = "Le pseudo ou le mot de passe est invalide !";
       }
