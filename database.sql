@@ -27,12 +27,29 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `lspd` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nom` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `telephone` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `steam` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `crime` text COLLATE utf8_unicode_ci NOT NULL,
-  `sanction` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `matricule` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `delits` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `amendes` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `prison` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=14 ;
+
+
+CREATE TABLE IF NOT EXISTS `casier` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nom` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `permis` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=14 ;
+
+CREATE TABLE IF NOT EXISTS `lspd` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nom` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=14 ;
+
+
+
 
 
 -- --------------------------------------------------------
